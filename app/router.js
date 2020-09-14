@@ -7,4 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('with-out-ember-concurrency');
+  this.route('with-ember-concurrency');
+  this.route('audio-note');
 });

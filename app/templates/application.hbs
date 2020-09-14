@@ -1,5 +1,18 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div class="container">
+  <div class="menu">
+    <div class="links">
+      <LinkTo @route="with-out-ember-concurrency">
+        With out ember concurrency
+      </LinkTo>
+      <LinkTo @route="with-ember-concurrency">
+        With ember concurrency
+      </LinkTo>
+      <LinkTo @route="audio-note">
+        Audio Note
+      </LinkTo>
+    </div>
+  </div>
+  <div class="body">
+    {{outlet}}
+  </div>
+</div>

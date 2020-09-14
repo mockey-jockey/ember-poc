@@ -1,0 +1,15 @@
+<p>Search:</p>
+<input type="button" onclick={{action 'updateResults'}} value="Get Country list"/>
+
+<br/><br/>
+
+<p>Results:</p>
+{{#if isLoading}}
+    <h1>Loading.....</h1>
+{{else}}
+    <ul>
+        {{#each results as |result|}}
+            <li>{{result}}</li>
+        {{/each}}
+    </ul>
+{{/if}}

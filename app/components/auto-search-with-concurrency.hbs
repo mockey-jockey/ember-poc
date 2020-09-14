@@ -1,0 +1,15 @@
+<p>Search:</p>
+<input type="button" onclick={{perform queryResults}} value="Get Country list"/>
+
+<br/><br/>
+
+<p>Results:</p>
+{{#if queryResults.isRunning}}
+    <h1>Loading.....</h1>
+{{else}}
+    <ul>
+        {{#each results as |result|}}
+            <li>{{result}}</li>
+        {{/each}}
+    </ul>
+{{/if}}
