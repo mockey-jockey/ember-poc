@@ -10,4 +10,5 @@ Router.map(function() {
   this.route('with-out-ember-concurrency');
   this.route('with-ember-concurrency');
   this.route('audio-note');
+  this.route('audio-note-lib');
 });

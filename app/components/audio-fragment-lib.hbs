@@ -1,7 +1,14 @@
 <h1>Audio Recording Test</h1>
 <p>Press start button to record</p>
-{{#if recorder}}
+<br/>
+{{#if isRecording}}
     <button id="stop" {{action 'stopRecord'}}>Stop recording...</button>
 {{else}}
     <button id="start" {{action 'startRecord'}}>Start recording...</button>
+{{/if}}
+<br/>
+<br/>
+<br/>
+{{#if showAudio}}
+    <audio controls src={{blobURL}}></audio>
 {{/if}}
